@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tables
+        </title>
+    </head>
+    <body>
+        <h1>Tables Demo</h1>
+        <p>
+            <ul>
+                <li>created using &lt;table&gt; tag</li>
+                <li>&lt;tr&gt; for creating table rows</li>
+                <li>&lt;td&gt; and &lt;th&gt; for creating table cells</li>
+            </ul>
+        </p>
+        <table border="1" >
+            <caption>This is caption</caption>
+            <tr>
+                <th>Name</th>
+                <th>Id</th>
+            </tr>
+            <tr>
+                <td>Ram</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>Sita</td>
+                <td>456</td>
+            </tr>
+        </table>
+
+        <hr/>
+
+        <h2>Rowspan and colspan use case</h2>
+
+        <table border="1">
+            <caption>Shopping bill</caption>
+            <tr>
+                <th rowspan="2">S.N</th>
+                <th colspan="2">Content</th>
+            </tr>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>phone</td>
+                <td>25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td align="right">pc</td>
+                <td>40000</td>
+            </tr>
+            <tr>
+                <th colspan="2">Total</th>
+                <td>65000</td>
+            </tr>
+        </table>
+
+        <hr/>
+
+        <h1>Table example</h1>
+        <h4>with attributes like align,valign,rowspan,colspan,border and caption</h4>
+        <table border="1">
+            <caption>Purchase bill</caption>
+            <tr>
+                <th rowspan="2" valign="top"> S.N</th>
+                <th colspan="4">Items</th>
+            </tr>
+            <tr>
+                <th align="right">Item</th>
+                <th>Qty</th>
+                <th valign="bottom">Cost</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td align="center">1</td>
+                <td align="center">pc</td>
+                <td>2</td>
+                <td align="center">50000</td>
+                <td align="center">100000</td>
+            </tr>
+            <tr>
+                <td align="center">2</td>
+                <td align="center">Mobile</td>
+                <td>1</td>
+                <td align="right">30000</td>
+                <td>30000</td>
+
+            </tr>
+
+            <tr>
+                <th colspan="4" align="right">Total</th>
+                <td align="center"> 130000</td>
+            </tr>
+        </table>
+    </body>
+</html>
