@@ -1,0 +1,54 @@
+<html>
+    <head><title>
+        Basic HTML Form
+    </title></head>
+    <body>
+        <form action="basic_html_form.php" method="post">
+            <p>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" />
+            </p>
+            <p>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" />
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" />
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" />
+            </p>
+            <p>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" name="confirm_password" id="confirm_password" />
+            </p>
+
+            <p>
+                <label for="department">Select department</label>
+                <select name="dept">
+                    <option value="">Select department</option>
+                    <option value="BEIT">BEIT</option>
+                    <option value="BESE">BESE</option>
+                    <option value="BECE">BECE</option>
+
+                </select>
+
+            </p>
+            <P>
+                <label for="gender">Gender:</label>
+                Male: <input type="radio" value="male" name="gender"/>
+                Female : <input type="radio" value="female" name="gender"/>
+            </P>
+            <p>
+                <label for="subjects">Subjects:</label>
+                Math<input type="checkbox" name="sub" value="MTH"/>
+                C++<input type="checkbox" name="sub" value="C++"/>
+                WT<input type="checkbox" name="sub" value="WT"/>
+            </p>
+            <p>Describe yourself:<textarea rows="5" cols="20"></textarea></p>
+            <p>Upload Pic: <input type="file" name="image"/></p>
+            <p><input type="submit" value="Submit Form"/> <input type="reset" value="Clear Form"/></p>
+    </body>
+</html>

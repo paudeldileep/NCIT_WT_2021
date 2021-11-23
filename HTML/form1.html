@@ -1,17 +1,46 @@
 <html>
-    <head>
-        <title>Form</title>
-    </head>
-    <body>
-        <h1>Simple form</h1>
-        <form action="abc.php" method="get">
-            <h3>Basic details</h3>
-            Username: <input type="text" name="username" /> <br><br>
-            Password: <input type="password" name="password" /> <br>
+  <head>
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Simple form</h1>
+    <form action="abc.php" method="post">
+      <h3>Basic details</h3>
+      Username: <input type="text" name="username" /> <br /><br />
+      Password: <input type="password" name="password" /> <br /><br />
+      Email :<input type="email" name="useremail" /> <br /><br />
 
-            <h3>Address</h3>
-           Address <input type="text" >
-           
-        </form>
-    </body>
+      Gender : Male<input type="radio" name="gender" value="M" /> Female<input
+        type="radio"
+        name="gender"
+        value="F"
+      /><br /><br />
+
+      Fav Subject : <input type="checkbox" value="MTH" checked="checked" />Math
+      CT <input type="checkbox" value="CT" checked="checked" /> MFCS
+      <input type="checkbox" value="MFCS" /> <br /><br />
+
+      Faculty :
+      <select name="faculty" multiple>
+        <option>BEIT</option>
+        <option>BESE</option>
+        <option>BECE</option>
+        <option selected="selected">BCA</option>
+      </select>
+      <br /><br />
+      Upload image : <input type="file"/> <br><br>
+      Your Bio: <textarea rows="10" cols="40">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rerum dolore a, ipsum porro blanditiis quo explicabo maiores. Adipisci natus labore ipsa quis reprehenderit perferendis voluptates? Ipsum accusantium quis cupiditate.
+      </textarea> <br><br>
+
+      <button type="button">Submit</button>
+    
+      <input type="reset" value="Clear form" />
+
+      <h3>Address</h3>
+      Address <input type="text" />
+    </form>
+
+    <iframe src="lists.html" height="300" width="400"></iframe>
+  </body>
 </html>
