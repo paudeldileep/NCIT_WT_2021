@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Pseudo classes</title>
+    <style>
+      /* css related to pseudo classes */
+      a:link{
+          color:red;
+      }
+      a:visited{
+          color:green;
+      }
+      a:hover{
+          color: aqua;
+      }
+      a:active{
+          color: blue;
+      }
+
+      .name:focus{
+          background-color: aquamarine;
+          color: red;
+          font-size: x-large;
+      }
+
+      .email:focus-within{
+          font-size: xx-large;
+      }
+
+      body{
+        background-image: url(../Extra/assets/The_Marvels_logo.jpeg);
+        background-repeat: no-repeat;
+       background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo classes</h1>
+
+    <ul>
+      <li>
+        <a href="google.html" target="_blank">Google</a>
+      </li>
+      <li>
+        <a href="google.html" target="_blank">Google</a>
+      </li>
+      <li>
+        <a href="google.html" target="_blank">Google</a>
+      </li>
+      <li>
+        <a href="google.html" target="_blank">Google</a>
+      </li>
+    </ul>
+
+    <hr/>
+        <h2>Pseudo classes with input elements</h2>
+
+        <form>
+            Name:<input type="text" class="name" />
+            Email:<input type="email" class="email"/>
+        </form>
+  </body>
+</html>

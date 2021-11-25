@@ -1,0 +1,35 @@
+
+.trans-div{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.icon{
+    height: 60px;
+    object-fit: contain;
+}
+
+.details{
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    padding:0px 5px;
+    border:2px solid black;
+    border-radius: 10px;
+    transition: all ease 300ms;
+}
+
+.details span{
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 0px 2px;
+}
+
+.trans-div:hover .details{
+    transform: scale(1.1);
+    visibility: visible;
+}
