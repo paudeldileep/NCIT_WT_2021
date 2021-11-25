@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First</title>
+    <!--External (level) CSS-->
+    <link rel="stylesheet" type="text/css" href="first.css" />
+
+    <!--Internal/Document (level) CSS-->
+    <style type="text/css">
+        /* class selectors */
+       .red-p{
+           color:red;
+       }
+       .green-p{
+           color:green;
+       }
+       .simple-p{
+              font-size:40px;
+       }
+
+       /* id selectors */
+         #red-p{
+              color:red;
+         }
+    </style>
+  </head>
+  <body>
+    <h1>First CSS</h1>
+
+    <!--element with id-->
+    <p id="red-p">This is a red paragraph</p>
+    <!--Inline (level) CSS-->
+    <p style="border: 2px solid blue;" class="red-p">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore harum
+      quia animi vitae dolorum temporibus deserunt hic dicta amet incidunt. Esse
+      velit dolor, cupiditate eaque itaque labore at doloribus quam!
+    </p>
+    <hr />
+
+    <h2>Second CSS</h2>
+    <!--Element with multiple class names (separated by space)-->
+    <p class="red-p simple-p">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore harum
+      quia animi vitae dolorum temporibus deserunt hic dicta amet incidunt. Esse
+      velit dolor, cupiditate eaque itaque labore at doloribus quam!
+    </p>
+    <hr />
+    
+    <h3 class="red-p">Third CSS</h3>
+    <p class="green-p simple-p">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore harum
+      quia animi vitae dolorum temporibus deserunt hic dicta amet incidunt. Esse
+      velit dolor, cupiditate eaque itaque labore at doloribus quam!
+    </p>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>CSS SELECTORS</title>
+    <style>
+       
+       /* selects all p with classname blue */
+       p.blue{
+            color:blue;
+       }
+
+        /* selects all p with classname red */
+        p.red{
+              color:red;
+        }
+
+        /* selects all strong tag within p tag(descendant selector) */
+        p strong{
+            color:green;
+        }
+
+        /*selects all em whose parent is a div(only the em with div as a parent will be styled not the one within p within div) */
+        div>em{
+            color:yellow;
+        }
+        
+        /* but div em will select both the em inside div */
+        div em{
+            background-color:gray;
+        }
+
+        /* group selectors (mention selectors comma separated to apply stye to them)*/
+        .red, .blue{
+            text-decoration: underline;
+        }
+
+
+
+        
+    </style>
+  </head>
+  <body>
+      <h1 class="red">CSS SELECTORS</h1>
+
+      <!-- paragraphs with two classnames demo and red/blue-->
+      <p class="demo red">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit exercitationem molestias voluptates beatae quis necessitatibus repellat amet assumenda labore, rerum, neque non architecto aliquid velit quos nisi omnis quo dolorem!</p>
+      <p class="demo blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sapiente harum pariatur tenetur numquam quo magni voluptate corporis ducimus eligendi, obcaecati totam animi neque quis. Modi aliquam harum reiciendis eum.</p>
+
+      <hr/>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong>I am Strong</strong> Optio amet facere reprehenderit dolorum</p>
+      <hr/>
+      <div class="div-one">
+        <h4>Heading within a div</h4>
+        <p>paragrap within a div. I am <em>Emphasized</em> text</p>
+        I am also <em>Emphasized text</em>
+      </div>
+    </body>
+</html>
