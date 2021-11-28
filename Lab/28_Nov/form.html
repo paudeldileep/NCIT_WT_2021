@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>Form with Table</title>
+    <style type="text/css">
+      .text-red {
+        color: red;
+      }
+
+      .width-full {
+        width: 100%;
+      }
+
+      table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+
+      .width-80 {
+        width: 80%;
+      }
+
+      .form-container {
+        width: 60%;
+        margin: auto;
+      }
+
+      th {
+        text-align: left;
+      }
+      p,
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Registration Form</h2>
+    <div class="form-container">
+      <table>
+        <form>
+          <tr>
+            <th colspan="4" style="text-align: center">Register Here</th>
+          </tr>
+          <tr>
+            <th><span class="text-red">*</span>First Name</th>
+            <td><input type="text" name="fname" class="width-full" /></td>
+            <th>Last Name</th>
+            <td><input type="text" name="lname" class="width-full" /></td>
+          </tr>
+          <tr>
+            <th><span class="text-red">*</span>Email</th>
+            <td colspan="3">
+              <input type="email" name="email" class="width-full" />
+            </td>
+          </tr>
+          <tr>
+            <th><span class="text-red">*</span>Password</th>
+            <td><input type="password" name="pass1" class="width-full" /></td>
+            <th><span class="text-red">*</span>Re-Password</th>
+            <td><input type="password" name="pass2" /></td>
+          </tr>
+          <tr>
+            <th><span class="text-red">*</span>Gender</th>
+            <td>
+              <label
+                >Male<input type="radio" name="gender" value="male"
+              /></label>
+              <label
+                >Female<input type="radio" name="gender" value="female"
+              /></label>
+            </td>
+            <th>Country</th>
+
+            <td>
+              <select name="country" required>
+                <option value="">-Select Country-</option>
+                <option>Nepal</option>
+                <option>India</option>
+                <option>China</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>Your Photo</th>
+            <td><input type="file" name="userImage" class="width-full" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" name="submit" class="width-80" />
+            </td>
+            <td colspan="2">
+              <input type="reset" name="Clear Form" class="width-80" />
+            </td>
+          </tr>
+        </form>
+      </table>
+      <p>
+        <span class="text-red">*</span>Note: Required fields are marked
+        <span class="text-red">*</span>
+      </p>
+    </div>
+  </body>
+</html>
