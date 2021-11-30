@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Backgrounds</title>
+    <style type="text/css">
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .wrapper {
+        height: 350px;
+        width: 350px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      .title {
+        text-align: center;
+      }
+      .bg-div {
+        height: 300px;
+        width: 300px;
+        border: 1px solid gray;
+        border-radius: 10px;
+      }
+      .bg-color-div {
+        background-color: bisque;
+      }
+      .bg-color-gradient {
+        background-image: linear-gradient(to bottom, white, red);
+      }
+      .bg-image-normal {
+        background-image: url(css3.png);
+      }
+      .bg-image-no-repeat {
+        background-image: url(css3.png);
+        background-repeat: no-repeat;
+      }
+      .bg-image-center {
+        background-image: url(css3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .bg-image-cover {
+        background-image: url(css3.png);
+        background-size: cover;
+      }
+      .bg-image-contain {
+        background-image: url(css3.png);
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">CSS Backgrounds</h2>
+    <hr />
+    <!--divs with different backgrounds (color and images)-->
+    <div class="container">
+      <div class="wrapper">
+        <h5 class="title">Div with background color</h5>
+        <div class="bg-div bg-color-div"></div>
+      </div>
+      <div class="wrapper">
+        <h5 class="title">Div with background gradient color</h5>
+        <div class="bg-div bg-color-gradient"></div>
+      </div>
+      <div class="wrapper">
+        <h5 class="title">Div with background image-default</h5>
+        <div class="bg-div bg-image-normal"></div>
+      </div>
+      <div class="wrapper">
+        <h5 class="title">Div with background image- no repeat</h5>
+        <div class="bg-div bg-image-no-repeat"></div>
+      </div>
+      <div class="wrapper">
+        <h5 class="title">Div with background image-center</h5>
+        <div class="bg-div bg-image-center"></div>
+      </div>
+      <div class="wrapper">
+        <h5 class="title">Div with background image cover</h5>
+        <div class="bg-div bg-image-cover"></div>
+      </div>
+      <div class="wrapper">
+        <h5 class="title">Div with background image-contain</h5>
+        <div class="bg-div bg-image-contain"></div>
+      </div>
+    </div>
+  </body>
+</html>

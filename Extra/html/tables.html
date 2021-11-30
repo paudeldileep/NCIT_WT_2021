@@ -1,0 +1,171 @@
+<html>
+  <head>
+    <title>HTML TABLES</title>
+
+    <style type="text/css">
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+      }
+      .wrapper {
+        margin: 20px;
+      }
+      table {
+        caption-side: bottom;
+        border-collapse: collapse;
+        transition: all linear 300ms;
+      }
+      table:hover {
+        transform: scale(1.2);
+        box-shadow: 0px 0px 7px 2px rgba(47, 45, 177, 0.8);
+      }
+      table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 5px;
+      }
+
+      thead {
+        background-color: gray;
+        color: aliceblue;
+      }
+
+      /* bg color */
+      .bg-color tr:nth-child(odd) {
+        background-color: beige;
+      }
+      .bg-color tr:nth-child(even) {
+        background-color: thistle;
+      }
+
+      /* hover effect */
+      .bg-hover tr:nth-child(odd):hover {
+        background-color: beige;
+      }
+      .bg-hover tr:nth-child(even):hover {
+        background-color: thistle;
+      }
+      .bg-hover-head tr:hover {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>TABLES</h2>
+    <hr />
+    <div class="main">
+      <div class="wrapper">
+        <table>
+          <caption>
+            Simple Table
+          </caption>
+          <thead>
+            <tr>
+              <th>SN</th>
+              <th>Name</th>
+              <th>Roll No.</th>
+              <th>Faculty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>ABC</td>
+              <td>123</td>
+              <td>IT</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>ABC</td>
+              <td>123</td>
+              <td>IT</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>ABC</td>
+              <td>123</td>
+              <td>IT</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="wrapper">
+        <table>
+          <caption>
+            with background color
+          </caption>
+          <thead>
+            <tr>
+              <th>SN</th>
+              <th>Name</th>
+              <th>Roll No.</th>
+              <th>Faculty</th>
+            </tr>
+          </thead>
+          <tbody class="bg-color">
+            <tr>
+              <td>1</td>
+              <td>ABC</td>
+              <td>123</td>
+              <td>IT</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>ABC</td>
+              <td>123</td>
+              <td>IT</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>ABC</td>
+              <td>123</td>
+              <td>IT</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="wrapper">
+        <table>
+          <caption>
+            with hover effect
+          </caption>
+          <thead class="bg-hover-head">
+            <tr>
+              <th>SN</th>
+              <th>Name</th>
+              <th>Roll No.</th>
+              <th>Faculty</th>
+            </tr>
+          </thead>
+          <tbody class="bg-hover">
+            <tr>
+              <td>1</td>
+              <td>ABC</td>
+              <td>123</td>
+              <td>IT</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>ABC</td>
+              <td>123</td>
+              <td>IT</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>ABC</td>
+              <td>123</td>
+              <td>IT</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
