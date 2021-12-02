@@ -1,5 +1,56 @@
 <html>
   <head>
     <title>Lists</title>
+    <style type="text/css">
+      .normal {
+        list-style-type: circle;
+      }
+
+      ol {
+        list-style-type: lower-latin;
+      }
+
+      .image {
+        list-style-image: url(../Extra/assets/icons8-done-24.png);
+        background-color: black;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        list-style-position: inside;
+      }
+
+      .image li {
+        background-color: aqua;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        padding: 0px 5px;
+      }
+    </style>
   </head>
+
+  <body>
+    <h2>Lists with css</h2>
+    <hr />
+    <h4>Unordered list</h4>
+    <ul class="normal">
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+    </ul>
+    <hr />
+    <h4>Ordered list</h4>
+    <ol>
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+    </ol>
+
+    <hr />
+    <h4>Unordered list with image markers</h4>
+    <ul class="image">
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+    </ul>
+  </body>
 </html>
