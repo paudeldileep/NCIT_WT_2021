@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <title>Tables with css</title>
+    <style type="text/css">
+      hr {
+        margin: 30px auto;
+      }
+
+      .simple-table,
+      .simple-table th,
+      .simple-table td {
+        border: 2px solid black;
+      }
+      .simple-table {
+        /* border-collapse: collapse; */
+        border-spacing: 10px;
+      }
+      .simple-table th,
+      .simple-table td {
+        text-align: right;
+        padding-top: 10px;
+        /* vertical-align: top; */
+      }
+
+      .simple-table-two caption {
+        caption-side: bottom;
+      }
+
+      .simple-table-two,
+      .simple-table-two th,
+      .simple-table-two td {
+        border: 1px solid black;
+      }
+      .simple-table-two {
+        border-collapse: collapse;
+        transition: all linear 400ms;
+        width: 500px;
+        margin: 100px auto;
+      }
+
+      /* .simple-table-two .content {
+        background-color: aqua;
+      } */
+
+      .simple-table-two tr:nth-child(even) {
+        background-color: aqua;
+      }
+      .simple-table-two tr:nth-child(odd) {
+        background-color: pink;
+      }
+
+      /* .simple-table-two .row-first {
+        background-color: gray;
+      } */
+
+      .simple-table-two:hover {
+        transform: scale(1.5);
+        border: 2px solid yellow;
+      }
+
+      .simple-table-two tr:hover {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Tables with CSS</h2>
+    <hr />
+    <table class="simple-table">
+      <tr class="row-first">
+        <th>S.N</th>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Age</th>
+      </tr>
+      <tr class="content">
+        <td>1</td>
+        <td>ABC</td>
+        <td>181234</td>
+        <td>20</td>
+      </tr>
+      <tr class="content">
+        <td>2</td>
+        <td>XYZ</td>
+        <td>181235</td>
+        <td>21</td>
+      </tr>
+      <tr class="content">
+        <td>3</td>
+        <td>PQR</td>
+        <td>181236</td>
+        <td>22</td>
+      </tr>
+    </table>
+    <hr />
+    <table class="simple-table-two">
+      <caption>
+        Second table
+      </caption>
+      <tr class="row-first" style="background-color: gray">
+        <th>S.N</th>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Age</th>
+      </tr>
+      <tr class="content">
+        <td>1</td>
+        <td>ABC</td>
+        <td>181234</td>
+        <td>20</td>
+      </tr>
+      <tr class="content">
+        <td>2</td>
+        <td>XYZ</td>
+        <td>181235</td>
+        <td>21</td>
+      </tr>
+      <tr class="content">
+        <td>3</td>
+        <td>PQR</td>
+        <td>181236</td>
+        <td>22</td>
+      </tr>
+      <tr class="content">
+        <td>4</td>
+        <td>PQR</td>
+        <td>181236</td>
+        <td>22</td>
+      </tr>
+      <tr class="content">
+        <td>5</td>
+        <td>PQR</td>
+        <td>181236</td>
+        <td>22</td>
+      </tr>
+    </table>
+  </body>
+</html>
