@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Login</title>
+    <style>
+      .form-container {
+        width: 400px;
+        margin: auto;
+      }
+      .form-container .header {
+        text-align: center;
+      }
+      .form-container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .form-container input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1 class="header">Login</h1>
+      <form action="login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+        <br />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>
