@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML form</title>
+    <style>
+      div {
+        width: 610px;
+        margin: auto;
+      }
+      form {
+        padding: 10px;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+        padding: 10px;
+        caption-side: bottom;
+      }
+      input[type="email"] {
+        width: 90%;
+      }
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <table>
+          <caption>
+            <span class="red">*</span
+            >Marked are Important
+          </caption>
+          <tr>
+            <th colspan="4">Student Registration</th>
+          </tr>
+          <tr>
+            <td>
+              <label for="firstName"
+                ><span class="red">*</span>First Name:</label
+              >
+            </td>
+            <td>
+              <input type="text" id="firstName" name="firstName" />
+            </td>
+            <td>
+              <label for="lastName">Last Name:</label>
+            </td>
+            <td>
+              <input type="text" id="lastName" name="lastName" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="semester"><span class="red">*</span>Semester</label>
+            </td>
+            <td colspan="4">
+              <label> <input type="radio" name="semester" value="1" />I</label>
+              <label> <input type="radio" name="semester" value="2" />II</label>
+              <label>
+                <input
+                  type="radio"
+                  name="semester"
+                  value="3"
+                  checked="checked"
+                />III</label
+              >
+              <label> <input type="radio" name="semester" value="4" />IV</label>
+              <label> <input type="radio" name="semester" value="5" />V</label>
+              <label> <input type="radio" name="semester" value="6" />VI</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="faculty"><span class="red">*</span>Faculty:</label>
+            </td>
+            <td>
+              <select name="faculty" id="faculty" required>
+                <option value="">-Choose Faculty</option>
+                <option>BEIT</option>
+                <option>BESE</option>
+                <option>BECE</option>
+              </select>
+            </td>
+            <td>
+              <label for="gender"><span class="red">*</span>Gender:</label>
+            </td>
+            <td>
+              <label
+                ><input type="radio" value="male" name="gender" />Male</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  value="female"
+                  name="gender"
+                />Female</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"><span class="red">*</span>Email:</label>
+            </td>
+            <td colspan="3"><input type="email" id="email" name="email" /></td>
+          </tr>
+          <tr>
+            <th colspan="2">
+              <input type="submit" value="Submit" />
+            </th>
+            <th colspan="2">
+              <input type="reset" value="Reset" />
+            </th>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
