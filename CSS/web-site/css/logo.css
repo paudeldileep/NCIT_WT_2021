@@ -1,0 +1,17 @@
+.logo-container {
+  height: 40px;
+  width: 100%;
+  background-color: gray;
+  position: relative;
+}
+
+.logo-container img {
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.login-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
