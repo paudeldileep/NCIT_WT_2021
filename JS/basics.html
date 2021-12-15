@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>JS BASICS</title>
+    <script type="text/javascript">
+      //declaring variables using var
+      var name = "John"; //string
+      var age = 34; //number
+      var isStudent = true; //boolean
+      var salary = null; //null
+      var address = undefined; //undefined
+      var person = { name: "John", age: 34, isStudent: true, salary: null }; //object
+
+      //output the information
+      //using console.log() : use to output information to the console in the browser
+      console.log("name:", name);
+      console.log(age);
+      console.log(isStudent);
+      console.log(salary);
+
+      //window output methods : alert(), prompt(), confirm()
+
+      //alert('Hello World');
+      alert("Hello World");
+
+      //prompt() : use to get input from the user
+      var name = prompt("What is your name?");
+      alert("Hello " + name);
+
+      //confirm() : use to ask the user a question and get a yes or no answer
+      var isGraduate = confirm("Are you a graduate?");
+      alert(isGraduate);
+
+      //output using document.write() : use to output information to the browser
+      document.write("This is using document.write()");
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h2>JS BASICS</h2>
+      <p style="margin-top: 50px">
+        Make sure to open your console in developer tools to see some output
+        there.
+      </p>
+    </div>
+  </body>
+</html>
