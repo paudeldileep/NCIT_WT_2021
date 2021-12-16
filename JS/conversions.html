@@ -1,48 +1,46 @@
 <html>
-
-<head>
+  <head>
     <title>JS conversions</title>
     <script type="text/javascript">
-        //js type conversion: implicit and explicit
-        //implicit conversion:
-        //1. string to number
-        var num = "10"; //string
-        var num2 = num * 2; //number
-        console.log(num2); //20
+      //js type conversion: implicit and explicit
+      //implicit conversion:
+      //1. string to number
+      var num = "10"; //string
+      var num2 = num * 2; //number
+      console.log(num2); //20
 
-        var num3= num+2; //string
-        console.log(num3); //102
+      var num3 = num + 2; //string
+      console.log(num3); //102
 
-        //explicit conversion:
-        //2. number to string
-        var num4 = 10; //number
-        var num5 = num4.toString(); //string
-        console.log(typeof(num5)); //string
+      //explicit conversion:
+      //2. number to string
+      var num4 = 10; //number
+      var num5 = num4.toString(); //string
+      console.log(typeof num5); //string
 
-        //string to number
-        var num6 = "10"; //string
-        var num7 = Number(num6); //number
-        console.log(typeof(num7)); //number
+      //string to number
+      var num6 = "10"; //string
+      var num7 = Number(num6); //number
+      console.log(typeof num7); //number
 
-        //string to number using parseInt()
-        var num8 = "10"; //string
-        var num9 = parseInt(num8); //number
-        console.log(typeof(num9)); //number
+      //string to number using parseInt()
+      var num8 = "10"; //string
+      var num9 = parseInt(num8); //number
+      console.log(typeof num9); //number
 
-        //string to number using parseFloat()
-        var num10 = "10.5"; //string
-        var num11 = parseFloat(num10); //number
-        console.log(typeof(num11)); //number
-
+      //string to number using parseFloat()
+      var num10 = "10.5"; //string
+      var num11 = parseFloat(num10); //number
+      console.log(typeof num11); //number
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div style="text-align: center">
-        <h2>JS Implicit and Explicit type conversion</h2>
-        <p style="margin-top: 50px">
-            Make sure to open your console in developer tools to see some output
-        </p>
-</body>
-
+      <h2>JS Implicit and Explicit type conversion</h2>
+      <p style="margin-top: 50px">
+        Make sure to open your console in developer tools to see some output
+      </p>
+    </div>
+  </body>
 </html>
