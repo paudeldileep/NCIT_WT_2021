@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>JS DOM</title>
+    <script src="JS/dom.js"></script>
+    <script></script>
+    <style>
+      #display_area {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+      }
+      .form_conatiner {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        margin: 10px auto;
+      }
+      input {
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form_container">
+      <form>
+        Name: <input type="text" id="name" onblur="handleClick()" />
+        <span id="name_error"></span>
+        <br />
+        Email:
+        <input
+          type="text"
+          id="email"
+          name="useremail"
+          onblur="handleClick()"
+        /><span id="email_error"></span>
+        <br />
+        <button type="button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
