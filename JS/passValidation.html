@@ -1,0 +1,60 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!-- html form with email and two password field -->
+        <form id="myform" action="" method="post">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" >
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password1" id="password1" >
+            <br><br>
+            <label for="password2">Confirm Password:</label>
+            <input type="password" name="password2" id="password2" >
+            <br><br>
+            <input type="submit" value="Submit">
+    </body>
+
+    <script>
+        //call validation function on submit
+        document.getElementById("myform").onsubmit = validatePassword;
+
+        // function to validate password
+        function validatePassword(){
+            var password1 = document.getElementById("password1").value;
+            var password2 = document.getElementById("password2").value;
+
+            //check if password field is empty or not
+            if(password1 == "" || password2 == ""){
+                alert("Password field cannot be empty");
+                return false;  //false means form will not be submitted
+            }
+
+            if(password1 != password2){
+                alert("Passwords do not match");
+                return false;
+            }
+            return true;
+        }
+        // function to validate email
+        // function validateEmail(){
+        //     var email = document.getElementById("email").value;
+        //     var atpos = email.indexOf("@");
+        //     var dotpos = email.lastIndexOf(".");
+        //     if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+        //         alert("Not a valid e-mail address");
+        //         return false;
+        //     }
+        //     return true;
+        // }
+        // function to validate form
+        // function validateForm(){
+        //     if(validateEmail() && validatePassword()){
+        //         return true;
+        //     }
+        //     return false;
+        // }
+    </script>
+</html>

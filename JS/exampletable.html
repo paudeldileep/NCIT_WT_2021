@@ -1,0 +1,105 @@
+<html>
+  <head> </head>
+  <body>
+    <div>
+      <form>
+        <table border="1">
+          <tr>
+            <td>S.N</td>
+            <td>Item</td>
+            <td>Qty</td>
+            <td>Price</td>
+            <td>Total</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Phone</td>
+            <td>
+              <input type="text" name="qty1" id="phoneQty" value="" />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="price1"
+                id="phonePrice"
+                value=""
+                onkeyup="calcTotal()"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="total1"
+                id="phoneTotal"
+                value=""
+                onfocus="this.blur()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>PC</td>
+            <td>
+              <input type="text" name="qty1" id="pcQty" value="" />
+            </td>
+            <td>
+              <input type="text" name="price1" id="pcPrice" value="" />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="total1"
+                id="pcTotal"
+                value=""
+                onfocus="this.blur()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th colspan="4">
+              <button id="button" type="button">Total</button>
+            </th>
+            <td>
+              <input
+                type="text"
+                name="total1"
+                id="grandTotal"
+                value=""
+                onfocus="this.blur()"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <!-- script -->
+    <script>
+      //assign click event to button
+
+      document.getElementById("button").onclick = calcTotal;
+      function calcTotal() {
+        var phQty = document.getElementById("phoneQty").value
+          ? document.getElementById("phoneQty").value
+          : 0;
+        var phPrice = document.getElementById("phonePrice").value
+          ? document.getElementById("phonePrice").value
+          : 0;
+        var pcQty = document.getElementById("pcQty").value
+          ? document.getElementById("pcQty").value
+          : 0;
+        var pcPrice = document.getElementById("pcPrice").value
+          ? document.getElementById("pcPrice").value
+          : 0;
+        var phoneTotal = parseInt(phQty) * parseInt(phPrice);
+        var pcTotal = parseInt(pcQty) * parseInt(pcPrice);
+        var total = parseInt(phoneTotal) + parseInt(pcTotal);
+
+        //assign value to output input fields
+        document.getElementById("phoneTotal").value = phoneTotal;
+        document.getElementById("pcTotal").value = pcTotal;
+        document.getElementById("grandTotal").value = total;
+      }
+    </script>
+  </body>
+</html>
