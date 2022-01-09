@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <style>
+      /* #box {
+        visibility: visible;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="box" style="visibility: visible">
+      <img src="../HTML/Images/html5.png" />
+    </div>
+    <button id="btn">Hide/Show</button>
+
+    <script>
+      document.getElementById("btn").onclick = toggleDisplay;
+
+      function toggleDisplay() {
+        console.log("called");
+        //get target element
+        var ele = document.getElementById("box");
+
+        console.log(ele.style.visibility);
+        // if (ele.style.visibility == "visible") {
+        //   ele.style.visibility = "hidden";
+        // } else {
+        //   ele.style.visibility = "visible";
+        // }
+
+        ele.style.visibility == "visible"
+          ? (ele.style.visibility = "hidden")
+          : (ele.style.visibility = "visible");
+
+        // console.log(ele.style.display);
+        // if (ele.style.display == "inline") {
+        //   ele.style.display = "none";
+        // } else {
+        //   ele.style.display = "inline";
+        // }
+      }
+    </script>
+  </body>
+</html>

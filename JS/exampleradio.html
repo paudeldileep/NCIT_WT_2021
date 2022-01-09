@@ -1,0 +1,51 @@
+<html>
+  <head> </head>
+  <body
+    onload="alert('Welcome to my Web')"
+    onunload="alert('leaving the site?')"
+  >
+    <div>
+      <label
+        ><input
+          type="radio"
+          name="clg"
+          onclick="handleClick(1)"
+          value="NCIT"
+        />NCIT</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="clg"
+          onclick="handleClick(2)"
+          value="Kathford"
+        />Kathford</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="clg"
+          onclick="handleClick(3)"
+          value="Khopa"
+        />Khopa</label
+      >
+    </div>
+    <script>
+      function handleClick(val) {
+        switch (val) {
+          case 1:
+            alert("NCIT is affiliated to Pokhara Uni!");
+            break;
+
+          case 2:
+            alert("Kathford is affiliated to Tribhuvan Uni!");
+            break;
+
+          case 3:
+            alert("Khowa is affiliated to Purbanchal Uni!");
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

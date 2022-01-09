@@ -3,6 +3,32 @@
     <title>Example</title>
   </head>
   <body>
-    <div style="height: 100vh; width: 100%"></div>
+    <div id="main" style="height: 100vh; width: 100%">
+      <h2>Welcome To My WEB!</h2>
+      <div id="box">
+        <!-- <p>Color:<input type="text" id="color" /></p> -->
+        <p>Color:<input type="color" id="color" /></p>
+        <p>BG-Color:<input type="color" id="bgcolor" /></p>
+        <button id="btn" onclick="applyColor()">Apply</button>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function applyColor() {
+        //get color and bgcolor
+        var color = document.getElementById("color").value;
+        var bgcolor = document.getElementById("bgcolor").value;
+
+        //apply these to main div
+
+        var ele = document.getElementById("main");
+        if (color != bgcolor) {
+          ele.style.color = color;
+          ele.style.backgroundColor = bgcolor;
+        } else {
+          alert("please choose different color for text and background");
+        }
+      }
+    </script>
   </body>
 </html>

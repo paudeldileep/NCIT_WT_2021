@@ -1,0 +1,33 @@
+<html>
+  <head></head>
+  <body>
+    <div
+      id="box"
+      style="display: inline; position: relative; top: 50; left: 10"
+    >
+      <img src="../HTML/Images/html5.png" />
+
+      <div style="margin-top: 100">
+        <p>
+          X-coord:
+          <input type="text" id="left" />
+        </p>
+        <p>
+          Y-coord:
+          <input type="text" id="top" />
+        </p>
+      </div>
+      <button id="btn" onclick="handleMove()">Move</button>
+    </div>
+    <script>
+      function handleMove() {
+        var top = document.getElementById("top").value;
+        var left = document.getElementById("left").value;
+
+        var ele = document.getElementById("box");
+        ele.style.top = top;
+        ele.style.left = left;
+      }
+    </script>
+  </body>
+</html>
