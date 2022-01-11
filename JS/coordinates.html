@@ -1,0 +1,33 @@
+<html>
+  <head> </head>
+  <body>
+    <div>
+      Screen X: <input type="text" id="screenX" value="" readonly /> Screen Y:
+      <input type="text" id="screenY" value="" readonly /> Client X:
+      <input type="text" id="clientX" value="" readonly /> Client Y:
+      <input type="text" id="clientY" value="" readonly />
+    </div>
+    <div
+      id="box"
+      style="
+        width: 400;
+        height: 400;
+        border: 1px solid blue;
+        position: relative;
+        left: 100px;
+      "
+    ></div>
+    <script>
+      document
+        .getElementById("box")
+        .addEventListener("click", myfunction, true);
+      function myfunction(e) {
+        //receives event as a default parameter
+        document.getElementById("screenX").value = e.screenX;
+        document.getElementById("screenY").value = e.screenY;
+        document.getElementById("clientX").value = e.clientX;
+        document.getElementById("clientY").value = e.clientY;
+      }
+    </script>
+  </body>
+</html>

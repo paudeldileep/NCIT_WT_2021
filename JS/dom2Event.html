@@ -1,0 +1,26 @@
+<html>
+  <head> </head>
+  <body>
+    <div>
+      <ul id="ul">
+        <li id="l1"><a href="#" id="a1">Link 1</a></li>
+        <li id="l2"><a href="#" id="a2">Link 2</a></li>
+        <li id="l3"><a href="#" id="a3">Link 3</a></li>
+      </ul>
+    </div>
+
+    <script>
+      document.getElementById("a1").addEventListener("click", myfunction, true);
+      document
+        .getElementById("l1")
+        .addEventListener("click", myfunction, false);
+      document.getElementById("ul").addEventListener("click", myfunction, true);
+
+      function myfunction(e) {
+        //receives event as a default parameter
+        console.log("e", e);
+        console.log("id", e.currentTarget.id);
+      }
+    </script>
+  </body>
+</html>

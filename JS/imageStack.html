@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <style>
+      img {
+        width: 400px;
+        height: 400px;
+      }
+      #img1 {
+        position: absolute;
+        top: 10;
+        left: 10;
+        z-index: 0;
+      }
+      #img2 {
+        position: absolute;
+        top: 110;
+        left: 110;
+        z-index: 0;
+      }
+      #img3 {
+        position: absolute;
+        top: 210;
+        left: 210;
+        z-index: 0;
+      }
+      #img4 {
+        position: absolute;
+        top: 310;
+        left: 310;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="../CSS/web-site/assets/img1.jfif"
+      onclick="changeZIndex('img1')"
+      id="img1"
+    />
+    <img
+      src="../CSS/web-site/assets/img2.jfif"
+      onclick="changeZIndex('img2')"
+      id="img2"
+    />
+    <img
+      src="../CSS/web-site/assets/img3.jfif"
+      onclick="changeZIndex('img3')"
+      id="img3"
+    />
+    <img
+      src="../CSS/web-site/assets/img4.jfif"
+      onclick="changeZIndex('img4')"
+      id="img4"
+    />
+
+    <script>
+      var oldTopImageId = "img4";
+      function changeZIndex(newTopImageId) {
+        document.getElementById(newTopImageId).style.zIndex = 10;
+        // change zindex of previous top image
+        document.getElementById(oldTopImageId).style.zIndex = 0;
+        oldTopImageId = newTopImageId;
+      }
+    </script>
+  </body>
+</html>

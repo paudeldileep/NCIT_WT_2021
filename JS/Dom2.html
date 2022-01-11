@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Dom2</title>
+  </head>
+  <body>
+    <h2>DOM 2 event propagation example</h2>
+
+    <div style="text-align: center">
+      <ul style="list-style-type: none; margin: 0; padding: 0" id="u1">
+        <li id="l1">
+          <a id="a1" href="http://www.w3schools.com/jsref/dom_obj_event.asp">
+            Event Reference
+          </a>
+        </li>
+        <li onclick="console.log('list item 2 event')">
+          <a id="a2" href=""> EventTarget Reference </a>
+        </li>
+        <li>
+          <a id="a3" href=""> EventListener Reference </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- javascript -->
+    <script>
+      document.getElementById("a1").addEventListener("click", myFunction, true);
+      document.getElementById("l1").addEventListener("click", myFunction, true);
+      document
+        .getElementById("u1")
+        .addEventListener("click", myFunction, false);
+      function myFunction(event) {
+        event.preventDefault();
+        console.log(event.currentTarget);
+      }
+    </script>
+  </body>
+</html>
