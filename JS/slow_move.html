@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Slow movemnet of html element using javascript</title>
+  </head>
+  <body onload="slowMove()">
+    <span id="ele" style="position: absolute; top: 5; left: 5">Hello</span>
+
+    <script>
+      //slow movement of element
+      function slowMove() {
+        //final position finalX=400 finalY=400
+        var finalX = 400,
+          finalY = 400;
+        var ele = document.getElementById("ele");
+
+        //get initial position of element
+        var x = parseInt(ele.style.left);
+        var y = parseInt(ele.style.top);
+
+        console.log("x=", x, "y=", y);
+
+        //call function that changes the position
+        var id = setInterval(move, 10); //(calls in every 100 milliseconds)
+
+        function move() {
+          //continuosly increment or decrement the value of elements position so as to reach finalx and final y
+          if (x == finalX && y == finalY) {
+            //stop the function
+            console.log("function stopped");
+            clearInterval(id);
+          } else {
+            //keep changing the position
+            if (x < finalX) {
+              x++;
+            }
+            if (x > finalX) {
+              x--;
+            }
+            if (y < finalY) {
+              y++;
+            }
+            if (y > finalY) {
+              y--;
+            }
+
+            ele.style.top = y + "px";
+            ele.style.left = x + "px";
+          }
+          console.log("x=", x, "y=", y);
+        }
+      }
+    </script>
+  </body>
+</html>

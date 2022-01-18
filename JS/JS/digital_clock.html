@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Digital clock</title>
+  </head>
+  <body>
+    <div id="clockArea">
+      <span id="hr"></span>
+      <span id="min"></span>
+      <span id="sec"></span>
+      <span id="diem"></span>
+    </div>
+
+    <!-- script -->
+    <script>
+      function renderTime() {
+        var currentDate = new Date();
+
+        var diem = "AM";
+        //console.log("date", currentDate);
+        //get hours,minutes and seconds
+        var hour = currentDate.getHours();
+        var minute = currentDate.getMinutes();
+        var second = currentDate.getSeconds();
+
+        //console.log(hour, minute, second);
+
+        if (hour == 0) {
+          hour = 12;
+        } else if (hour > 12) {
+          hour = hour - 12;
+          diem = "PM";
+        }
+
+        if (hour < 10) {
+          hour = "0" + hour;
+        }
+        if (minute < 10) {
+          minute = "0" + minute;
+        }
+        if (second < 10) {
+          second = "0" + second;
+        }
+
+        var clock = document.getElementById("clockArea");
+        clock.innerText = hour + ":" + minute + ":" + second + " " + diem;
+      }
+
+      setInterval(renderTime, 1000);
+    </script>
+  </body>
+</html>
