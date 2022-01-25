@@ -4,10 +4,10 @@
 //parameters
 $servername = "localhost";
 $username = "root";
-$password = "";
+$userpassword = "";
 
 //create connection
-$connection = mysqli_connect($servername, $username, $password);
+$connection = mysqli_connect($servername, $username, $userpassword);
 
 //check connection
 if (!$connection) {
