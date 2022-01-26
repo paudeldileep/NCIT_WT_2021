@@ -13,7 +13,7 @@
 <body>
     <h3>Sign Up</h3>
     <!-- sign up form with name,email,password,photo,dob,address     -->
-    <form action="process_register.php" method="post">
+    <form action="process_register.php" method="post" enctype="multipart/form-data">
         <label>Name:</label>
         <input type="text" name="name" required>
         <br>
